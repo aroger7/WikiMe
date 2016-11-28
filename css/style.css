@@ -1,0 +1,178 @@
+html,
+body {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+h1 {
+    font: 3em Montserrat, sans-serif;
+}
+
+h2 {
+   font: 2.25em Montserrat, sans-serif; 
+}
+
+h3 {
+    font: 1.5em Montserrat, sans-serif;
+}
+
+p {
+    font: 1em Roboto, sans-serif;
+}
+
+#search-border {
+    width: auto;
+    display: inline-block;
+    padding: 3px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #535353;
+    border-radius: 25px;
+}
+
+#search-text-box {
+    background: transparent;
+    border-style: none;
+    margin: 5px;
+}
+
+#search-text-box:focus {
+    border-style: none;
+    outline: none;
+}
+
+#search-box {
+    align-self: center;
+    margin: auto;
+    width: auto;
+}
+
+#search-icon {
+    margin: 5px;
+    cursor: pointer;
+    color: #535353;
+}
+
+#random-article-icon {
+    margin: 5px;
+    cursor: pointer;
+    color: #535353;
+}
+
+#close-icon {
+    display: none;
+    opacity: 0;
+    cursor: pointer;
+    color: #535353;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #D3D3D3;
+}
+
+#title {
+    align-self: center;
+    text-align: center;
+    color: #535353;
+    margin-bottom: 10px;
+}
+
+#copyright {
+    align-self: center;
+    font-size: 14px;
+}
+
+#result-box {
+    display: none;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#result-spinner {
+    margin: auto;
+    color: #535353;
+}
+
+#result-list {
+    display: none;
+    overflow-y: scroll;
+}
+
+#result-list.li {
+    margin: auto;
+}
+
+.result {
+    width: 70%;
+    height: 100px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.result-link {
+    display: block;
+    background-color: #E0E0E0;
+    margin: auto;
+    padding: 20px;
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.result-link:link h2,
+.result-link:link,
+.result-link:visited h2,
+.result-link:visited {
+    text-decoration: none;
+}
+
+.result-link:hover {
+    border-style: solid;
+    border-color: #2980B9;
+}
+
+.result-title {
+    margin-bottom: 5px;
+    color: #535353;
+}
+
+.result-description {
+    color: #535353;
+}
+
+#no-result-text {
+    display: none;
+    text-align: center;
+    margin: auto;
+    color: #535353;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font: 2.625em Montserrat, sans-serif;
+    }
+
+    h2 {
+       font: 1.969em Montserrat, sans-serif; 
+    }
+
+    h3 {
+        font: 1.3125em Montserrat, sans-serif;
+    }
+
+    p {
+        font: 0.875em Roboto, sans-serif;
+    }
+}
+

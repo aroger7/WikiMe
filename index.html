@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WikiMe</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-</head>
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+
 <body>
+    <div id="main-container">
+        <div id="search-box">
+            <h1 id="title">WikiMe</h1>
+            <div id="search-border">
+                <input id="search-text-box" type="text"></input>
+                <i id="search-icon" class="fa fa-search"></i>
+                <i id="close-icon" class="fa fa-close"></i>
+                <i id="random-article-icon" class="fa fa-random"></i>
+            </div>
+        </div>
+        <div id="result-box">
+            <ul id="result-list">
+            </ul>
+            <h2 id="no-result-text">Sorry, we couldn't find any results. Maybe they're in another castle?</h2>
+            <i id="result-spinner" class="fa fa-spinner fa-spin fa-4x"></i>
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
